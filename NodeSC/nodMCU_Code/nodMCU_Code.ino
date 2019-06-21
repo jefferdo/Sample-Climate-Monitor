@@ -25,6 +25,7 @@
 // Set these to run example.
 #define FIREBASE_HOST "scorpionmfs-jeewaka.firebaseio.com"
 #define FIREBASE_AUTH "9Dvti5dwM2XezrrQOEsB238FEWb3XMOBfSCm34wk"
+
 #define WIFI_SSID "Jefferdo IoT"
 #define WIFI_PASSWORD "swdKD2h8q56pzD9JktAe5J4x9eAENyUUsQxmz8p9qyGZgHtE5kXjZMC5HnLyxsu"
 
