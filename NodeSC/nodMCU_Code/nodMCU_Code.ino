@@ -13,7 +13,7 @@
 #define WIFI_PASSWORD "CISCO@123"
 
 #define nodeNO "001"
-#define nodeName "NIBM"
+#define nodeName "APTS"
 
 DHT dht(DHTPIN, DHTTYPE);
 

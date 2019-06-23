@@ -1428,7 +1428,6 @@ section {
 }
 
 .account-item > .content > a:after {
-    font-family: "Material-Design-Iconic-Font";
     font-weight: 500;
     content: '\f2f9';
     display: inline-block;
@@ -2573,7 +2572,7 @@ section {
 }
 
 .header-desktop3 {
-    background: #ffffff;
+    background: goldenrod;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -2584,7 +2583,7 @@ section {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 76px;
+    height: 120px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
