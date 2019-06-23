@@ -1,21 +1,27 @@
 #include <ESP8266WiFi.h>
 #include <FirebaseArduino.h>
+#include <DHT.h>
 
 #define LED 2
+#define DHTPIN 2
+#define DHTTYPE DHT11 
 
 #define FIREBASE_HOST "scorpionmfs-jeewaka.firebaseio.com"
 #define FIREBASE_AUTH "9Dvti5dwM2XezrrQOEsB238FEWb3XMOBfSCm34wk"
 
-#define WIFI_SSID "Jefferdo IoT"
-#define WIFI_PASSWORD "swdKD2h8q56pzD9JktAe5J4x9eAENyUUsQxmz8p9qyGZgHtE5kXjZMC5HnLyxsu"
+#define WIFI_SSID "Cisco LAB"
+#define WIFI_PASSWORD "CISCO@123"
 
 #define nodeNO "001"
 #define nodeName "NIBM"
+
+DHT dht(DHTPIN, DHTTYPE);
 
 void setup()
 {
   pinMode(LED, OUTPUT);
   digitalWrite(LED, 0);
+  dht.begin();
 
   Serial.begin(9600);
 
@@ -51,7 +57,7 @@ int n = 0;
 void loop()
 {
   // set value
-  Firebase.setFloat(nodeNO "/temp", random(0, 60));
+  Firebase.setFloat(nodeNO "/temp", dht.readTemperature());
   // handle error
   if (Firebase.failed())
   {
@@ -65,7 +71,7 @@ void loop()
   delay(300);
 
   // update value
-  Firebase.setFloat(nodeNO "/humid", random(0, 90));
+  Firebase.setFloat(nodeNO "/humid", dht.readHumidity());
   // handle error
   if (Firebase.failed())
   {
