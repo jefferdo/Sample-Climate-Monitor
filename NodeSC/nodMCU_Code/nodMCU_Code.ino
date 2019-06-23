@@ -3,8 +3,8 @@
 #include <DHT.h>
 
 #define LED 2
-#define DHTPIN 2
-#define DHTTYPE DHT11 
+#define DHTTYPE DHT11
+#define DHTPIN D4
 
 #define FIREBASE_HOST "scorpionmfs-jeewaka.firebaseio.com"
 #define FIREBASE_AUTH "9Dvti5dwM2XezrrQOEsB238FEWb3XMOBfSCm34wk"
@@ -22,7 +22,6 @@ void setup()
   pinMode(LED, OUTPUT);
   digitalWrite(LED, 0);
   dht.begin();
-
   Serial.begin(9600);
 
   // connect to wifi.
@@ -56,8 +55,13 @@ int n = 0;
 
 void loop()
 {
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+
+  Serial.println(h);
+  Serial.println(t);
   // set value
-  Firebase.setFloat(nodeNO "/temp", dht.readTemperature());
+  Firebase.setFloat(nodeNO "/temp", t);
   // handle error
   if (Firebase.failed())
   {
@@ -71,7 +75,7 @@ void loop()
   delay(300);
 
   // update value
-  Firebase.setFloat(nodeNO "/humid", dht.readHumidity());
+  Firebase.setFloat(nodeNO "/humid", h);
   // handle error
   if (Firebase.failed())
   {
