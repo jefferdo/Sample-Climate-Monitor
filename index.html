@@ -8,7 +8,7 @@
     <link rel="icon" href="logo.png">
 
     <!-- Title Page-->
-    <title>APTS NOC - Oparation Simplified</title>
+    <title>APTS NOC - Oparation Simplified - Datacenter Monitoring System</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -48,91 +48,108 @@
         <header class="header-desktop3 d-none d-lg-block">
             <div class="section__content section__content--p35">
                 <div class="header3-wrap">
-                        <div class="header__logo">
-                            <a href="#">
-                                <img style="object-fit: contain; height:100px;" src="logo.png" alt="CoolAdmin" />
-                            </a>
-                        </div>
-                        <div class="header__tool float-right">                               
-                                <h1 class="text text-danger pull-right"><span class="text text-dark">APTS NOC</span>  Datacenter Monitoring System</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- END HEADER DESKTOP-->
-
-        <!-- HEADER MOBILE-->
-        <header class="header-mobile header-mobile-2 d-block d-lg-none">
-            <div class="header-mobile__bar">
-                <div class="container-fluid">
-                    <div class="header-mobile-inner">
+                    <div class="header__logo">
                         <a href="#">
-                            <img style="object-fit: contain; height:46px;" src="logo.png" alt="CoolAdmin" />
+                            <img style="object-fit: contain; height:100px;" src="logo.png" alt="CoolAdmin" />
                         </a>
                     </div>
-                </div>
-            </div>
-        </header>
-        <div class="sub-header-mobile-2 d-block d-lg-none">
-            <div class="header__tool">
-                <div class="container">
-                    <form class="form-header" action="" method="POST">
-                        <input class="au-input au-input--xl" type="text" name="search"
-                            placeholder="Search for datas &amp; reports..." />
-                        <button class="au-btn--submit" type="submit">
-                            <i class="zmdi zmdi-search"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- END HEADER MOBILE -->
-
-        <!-- PAGE CONTENT-->
-        <div class="page-content">
-            <!-- WELCOME-->
-            <section class="welcome p-t-10">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 id="name" class="text text-light title-4 pt-3">--
-                            </h1>
-                        </div>
+                    <div class="header__tool float-right">
+                        <h1 class="text text-danger pull-right"><span class="text text-dark">APTS NOC</span> Datacenter
+                            Monitoring System</h1>
                     </div>
                 </div>
-            </section>
-            <!-- END WELCOME-->
-
-            <!-- STATISTIC-->
-            <section class="statistic statistic2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 px-5">
-                            <div class="statistic__item statistic__item--red">
-                                <h2 class="number"><span id="temp">-</span>°</h2>
-                                <span class="desc">TEMPERATURE(°C)</span>
-                                <div class="icon">
-                                    <i class="fas fa-thermometer-quarter"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 px-5">
-                            <div class="statistic__item statistic__item--blue">
-                                <h2 class="number"><span id="humid">-</span>%</h2>
-                                <span class="desc">Humidity(%)</span>
-                                <div class="icon">
-                                    <i class="fas fa-tint"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END STATISTIC-->
-        </div>
-
+            </div>
     </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+
+    <!-- HEADER MOBILE-->
+    <header class="header-mobile header-mobile-2 d-block d-lg-none">
+        <center class="pt-2">
+            <a href="#">
+                <img style="object-fit: contain; height:80px; align-items: center" src="logo.png" alt="CoolAdmin" />
+            </a>
+        </center>
+    </header>
+    <div class="sub-header-mobile-2 d-block d-lg-none">
+        <div class="header__tool">
+            <div class="container">
+                <h1 class="text text-dark">APTS NOC</h1>
+                <h1 class="text text-danger">Datacenter
+                    Monitoring System</h1>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER MOBILE -->
+
+    <!-- PAGE CONTENT-->
+    <div class="page-content content">
+        <!-- WELCOME-->
+        <section class="welcome p-t-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <center>
+                            <h1 id="name" class="text text-light title-4 pt-3">--</h1>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END WELCOME-->
+
+        <!-- STATISTIC-->
+        <section class="statistic statistic2 px-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic__item statistic__item--red">
+                            <h2 class="number"><span id="temp">-</span>°</h2>
+                            <span class="desc">TEMPERATURE(°C)</span>
+                            <div class="icon">
+                                <i class="fas fa-thermometer-quarter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic__item statistic__item--blue">
+                            <h2 class="number"><span id="humid">-</span>%</h2>
+                            <span class="desc">Humidity(%)</span>
+                            <div class="icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic__item statistic__item--maroon">
+                            <h2 class="number"><span id="fire">-</span></h2>
+                            <span class="desc">Fire</span>
+                            <div class="icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic__item statistic__item--green">
+                            <h2 class="number"><span id="more">-</span></h2>
+                            <span class="desc">Motion</span>
+                            <div class="icon">
+                                <i class="fas fa-exclamation"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END STATISTIC-->
+    </div>
+    <footer class="goldbar">
+        <div class="container">
+            <center>
+                <p class="text text-light py-4">All Rights Reserved © 2019 | APTS </p>
+            </center>
+        </div>
+    </footer>
 
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>

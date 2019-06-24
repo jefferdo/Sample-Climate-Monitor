@@ -8,6 +8,8 @@ $(document).ready(function () {
             success: function (data) {
                 $('#temp').html(data['temp']);
                 $('#humid').html(data['humid']);
+                $('#fire').html(data['fire']);
+                $('#more').html(data['motion']);
                 $('#name').html(data['nodeName']);
                 refresh();
             },
