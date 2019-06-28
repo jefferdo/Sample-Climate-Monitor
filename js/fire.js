@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var fontSize = $('#fire').css('font-size');
     refresh();
     function refresh() {
         $.ajax({
@@ -8,8 +9,22 @@ $(document).ready(function () {
             success: function (data) {
                 $('#temp').html(data['temp']);
                 $('#humid').html(data['humid']);
-                $('#fire').html(data['fire']);
-                $('#more').html(data['motion']);
+                if (data['fire'] != 0) {
+                    $('#fire').html('Detected');
+                    $('#fire').css('font-size', '50px')
+                } else {
+                    $('#fire').html('OK');
+                    $('#fire').css('font-size', fontSize)
+                }
+
+                if (data['more'] != 0) {
+                    $('#more').html('Detected');
+                    $('#more').css('font-size', '50px')
+                } else {
+                    $('#more').html('OK');
+                    $('#more').css('font-size', fontSize)
+                }
+
                 $('#name').html(data['nodeName']);
                 refresh();
             },

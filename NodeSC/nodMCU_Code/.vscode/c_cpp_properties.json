@@ -3,10 +3,12 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:\\Users\\Jeewaka Fernando\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
-                "C:\\Users\\Jeewaka Fernando\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.2\\**",
-                "${workspaceFolder}/**",
-                "D:/Users/Jeewaka Fernando/Documents/Arduino/libraries/**"
+                "C:\\Users\\jeewa\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "C:\\Users\\jeewa\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.2\\**",
+                "${workspaceFolder}\\**",
+                "D:\\Users\\jeewa\\Documents\\Arduino\\libraries\\**",
+                "C:\\Users\\jeewa\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.2\\**",
+                "C:\\Users\\jeewa\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**"
             ],
             "defines": [
                 "_DEBUG",

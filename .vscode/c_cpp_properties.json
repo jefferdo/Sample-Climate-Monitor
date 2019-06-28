@@ -3,8 +3,10 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:\\\\Users\\\\Jeewaka Fernando\\\\AppData\\\\Local\\\\Arduino15\\\\packages\\\\esp8266\\\\tools\\\\**",
-                "C:\\\\Users\\\\Jeewaka Fernando\\\\AppData\\\\Local\\\\Arduino15\\\\packages\\\\esp8266\\\\hardware\\\\esp8266\\\\2.5.2\\\\**"
+                "C:\\Users\\Jeewaka Fernando\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "C:\\Users\\Jeewaka Fernando\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.2\\**",
+                "C:\\Users\\jeewa\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.2\\**",
+                "C:\\Users\\jeewa\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**"
             ],
             "forcedInclude": [],
             "intelliSenseMode": "msvc-x64"
