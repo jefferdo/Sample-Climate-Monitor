@@ -9,7 +9,7 @@ $(document).ready(function () {
             success: function (data) {
                 $('#temp').html(data['temp']);
                 $('#humid').html(data['humid']);
-                if (data['fire'] != 0) {
+                if (data['motion'] != 0) {
                     $('#fire').html('Detected');
                     $('#fire').css('font-size', '50px')
                 } else {
@@ -17,7 +17,7 @@ $(document).ready(function () {
                     $('#fire').css('font-size', fontSize)
                 }
 
-                if (data['more'] != 0) {
+                if (data['fire'] > 10) {
                     $('#more').html('Detected');
                     $('#more').css('font-size', '50px')
                 } else {
